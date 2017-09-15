@@ -1,0 +1,63 @@
+/* generated in /Users/anasosa/Sites/wordpress/33belowicecream/wp-content/themes/sweettooth/assets/custom-styles/general-custom-styles.php sweettooth_elated_content_styles function */
+.eltdf-content .eltdf-content-inner > .eltdf-full-width > .eltdf-full-width-inner { padding-top: 0px;}
+
+/* generated in /Users/anasosa/Sites/wordpress/33belowicecream/wp-content/themes/sweettooth/assets/custom-styles/general-custom-styles.php sweettooth_elated_content_styles function */
+.eltdf-content .eltdf-content-inner > .eltdf-container > .eltdf-container-inner { padding-top: 40px;}
+
+/* generated in /Users/anasosa/Sites/wordpress/33belowicecream/wp-content/themes/sweettooth/framework/modules/error404/custom-styles/custom-styles.php sweettooth_elated_404_header_general_styles function */
+.eltdf-404-page .eltdf-page-header .eltdf-menu-area, .eltdf-404-page .eltdf-page-header .eltdf-logo-area { background-color: rgba(255, 255, 255, 0) !important;}
+
+/* generated in /Users/anasosa/Sites/wordpress/33belowicecream/wp-content/themes/sweettooth/framework/modules/error404/custom-styles/custom-styles.php sweettooth_elated_404_footer_top_general_styles function */
+.eltdf-404-page .eltdf-content { background-image: url(http://sweettooth.elated-themes.com/wp-content/uploads/2017/03/page-not-found-img.jpg);background-position: center 0;background-size: cover;background-repeat: no-repeat;}
+
+/* generated in /Users/anasosa/Sites/wordpress/33belowicecream/wp-content/themes/sweettooth/framework/modules/error404/custom-styles/custom-styles.php sweettooth_elated_404_title_styles function */
+.eltdf-404-page .eltdf-page-not-found h1 { color: #c9a74d;}
+
+/* generated in /Users/anasosa/Sites/wordpress/33belowicecream/wp-content/themes/sweettooth/framework/modules/error404/custom-styles/custom-styles.php sweettooth_elated_404_subtitle_styles function */
+.eltdf-404-page .eltdf-page-not-found .eltdf-page-not-found-subtitle { color: #c9a74d;}
+
+/* generated in /Users/anasosa/Sites/wordpress/33belowicecream/wp-content/themes/sweettooth/framework/modules/error404/custom-styles/custom-styles.php sweettooth_elated_404_text_styles function */
+.eltdf-404-page .eltdf-page-not-found .eltdf-page-not-found-text { color: #c9a74d;}
+
+/* generated in /Users/anasosa/Sites/wordpress/33belowicecream/wp-content/themes/sweettooth/framework/modules/footer/custom-styles/custom-styles.php sweettooth_elated_footer_top_general_styles function */
+.eltdf-page-footer .eltdf-footer-top-holder { background-color: #070707;}
+
+/* generated in /Users/anasosa/Sites/wordpress/33belowicecream/wp-content/themes/sweettooth/framework/modules/footer/custom-styles/custom-styles.php sweettooth_elated_footer_top_columns_alignment function */
+.eltdf-page-footer .eltdf-footer-column-1 { text-align: left;}
+
+/* generated in /Users/anasosa/Sites/wordpress/33belowicecream/wp-content/themes/sweettooth/framework/modules/footer/custom-styles/custom-styles.php sweettooth_elated_footer_top_columns_alignment function */
+.eltdf-page-footer .eltdf-footer-column-2 { text-align: center;}
+
+/* generated in /Users/anasosa/Sites/wordpress/33belowicecream/wp-content/themes/sweettooth/framework/modules/footer/custom-styles/custom-styles.php sweettooth_elated_footer_top_columns_alignment function */
+.eltdf-page-footer .eltdf-footer-column-3 { text-align: center;}
+
+/* generated in /Users/anasosa/Sites/wordpress/33belowicecream/wp-content/themes/sweettooth/framework/modules/footer/custom-styles/custom-styles.php sweettooth_elated_footer_bottom_general_styles function */
+.eltdf-page-footer .eltdf-footer-bottom-holder { background-color: #111111;}
+
+/* generated in /Users/anasosa/Sites/wordpress/33belowicecream/wp-content/themes/sweettooth/framework/modules/header/types/header-minimal/admin/custom-styles/full-screen-menu-custom-styles.php sweettooth_elated_fullscreen_menu_general_styles function */
+.eltdf-fullscreen-menu-holder { background-image: url(http://sweettooth.elated-themes.com/wp-content/uploads/2017/03/full-screen-background.jpg);background-position: center 0;background-repeat: no-repeat;}
+
+/* generated in /Users/anasosa/Sites/wordpress/33belowicecream/wp-content/themes/sweettooth/framework/modules/header/types/header-minimal/admin/custom-styles/full-screen-menu-custom-styles.php sweettooth_elated_fullscreen_menu_first_level_style function */
+nav.eltdf-fullscreen-menu > ul > li > a { color: #ffffff;}
+
+/* generated in /Users/anasosa/Sites/wordpress/33belowicecream/wp-content/themes/sweettooth/framework/modules/header/types/header-minimal/admin/custom-styles/full-screen-menu-custom-styles.php sweettooth_elated_fullscreen_menu_first_level_style function */
+nav.eltdf-fullscreen-menu > ul > li > a:hover { color: #c9a74d;}
+
+/* generated in /Users/anasosa/Sites/wordpress/33belowicecream/wp-content/themes/sweettooth/framework/modules/header/types/header-minimal/admin/custom-styles/full-screen-menu-custom-styles.php sweettooth_elated_fullscreen_menu_second_level_style function */
+nav.eltdf-fullscreen-menu ul li ul li a { color: #ffffff;}
+
+/* generated in /Users/anasosa/Sites/wordpress/33belowicecream/wp-content/themes/sweettooth/framework/modules/header/types/header-minimal/admin/custom-styles/full-screen-menu-custom-styles.php sweettooth_elated_fullscreen_menu_second_level_style function */
+nav.eltdf-fullscreen-menu ul li ul li a:hover, nav.eltdf-fullscreen-menu ul li ul li.current-menu-ancestor > a, nav.eltdf-fullscreen-menu ul li ul li.current-menu-item > a { color: #c9a74d;}
+
+/* generated in /Users/anasosa/Sites/wordpress/33belowicecream/wp-content/themes/sweettooth/framework/modules/header/types/top-header/admin/custom-styles/top-header-custom-styles.php sweettooth_elated_header_top_bar_styles function */
+.eltdf-top-bar-background { height: 91px;}
+
+/* generated in /Users/anasosa/Sites/wordpress/33belowicecream/wp-content/themes/sweettooth/framework/modules/header/admin/custom-styles/header-custom-styles.php sweettooth_elated_main_menu_styles function */
+.eltdf-main-menu > ul > li > a { text-transform: uppercase;}
+
+/* generated in /Users/anasosa/Sites/wordpress/33belowicecream/wp-content/themes/sweettooth/framework/modules/search/custom-styles/search.php sweettooth_elated_search_opener_icon_size function */
+.eltdf-search-opener { font-size: 21px;}
+
+/* generated in /Users/anasosa/Sites/wordpress/33belowicecream/wp-content/themes/sweettooth/framework/modules/sidearea/custom-styles/sidearea.php sweettooth_elated_side_area_styles function */
+.eltdf-side-menu { background-image: url(http://sweettooth.elated-themes.com/wp-content/uploads/2017/03/side-area-background.jpg);background-position: center 0;background-size: cover;background-repeat: no-repeat;}
+
