@@ -1,0 +1,22 @@
+/* ==========================================================================
+   Inner Row Holder shortcode style - begin
+   ========================================================================== */
+
+.eltdf-inner-row-holder {
+	@include eltdfRelativeHolderLayout();
+	
+	&.eltdf-ir-alignment-left {
+		text-align: left;
+	}
+	
+	&.eltdf-ir-alignment-center {
+		text-align: center;
+	}
+	
+	&.eltdf-ir-alignment-right {
+		text-align: right;
+	}
+}
+/* ==========================================================================
+   Inner Row Holder shortcode style - end
+   ========================================================================== */

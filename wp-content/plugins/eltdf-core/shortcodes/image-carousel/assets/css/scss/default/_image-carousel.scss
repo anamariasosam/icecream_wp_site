@@ -1,0 +1,102 @@
+/* ==========================================================================
+   Image Carousel shortcode style - begin
+   ========================================================================== */
+
+.eltdf-image-carousel {
+	@include eltdfRelativeHolderLayout();
+
+	.eltdf-ic-item {
+
+		.eltdf-ic-image {
+			width: 100%;
+			height: 460px;
+			background-size: cover;
+			background-position: center 0;
+			background-repeat: no-repeat;
+			background-color: transparent;
+		}
+
+		.eltdf-ic-content {
+			text-align: center;
+			margin: 36px 0 0;
+
+			.eltdf-ic-title {
+				margin: 0 0 16px;
+			}
+
+			a {
+
+				.eltdf-ic-title {
+					display:inline-block;
+					position:relative;
+
+					&:before {
+						content:"";
+						position:absolute;
+						bottom:-5px;
+						left:0;
+						width:100%;
+						height:1px;
+						opacity:0;
+						background:$first-main-color;
+						@include eltdfTransform(scale(0.9,1));
+						@include eltdfTransition(all 0.25s ease-in-out);
+					}
+				}
+
+				&:hover {
+					.eltdf-ic-title {
+						&:before { 
+							opacity:1;
+							@include eltdfTransform(scale(1,1));
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.owl-nav {
+
+		.owl-prev,
+		.owl-next {
+			position: absolute;
+			top: 50%;
+			z-index: 3;
+			@include eltdfTransform(translateY(-50%));
+
+			&:hover {
+
+				.eltdf-prev-icon,
+				.eltdf-next-icon {
+					color: $first-main-color;
+				}
+			}
+		}
+
+		.owl-prev {
+			left: 20px;
+		}
+
+		.owl-next {
+			right: 20px;
+		}
+	}
+
+	.eltdf-owl-slider.owl-drag {
+		.owl-item {
+				cursor: grab;
+			    cursor: -moz-grab;
+			    cursor: -webkit-grab;
+
+			&:active {
+				cursor: grabbing;
+			    cursor: -moz-grabbing;
+			    cursor: -webkit-grabbing;
+			}
+		}
+	}
+}
+/* ==========================================================================
+   Image Carousel shortcode style - end
+   ========================================================================== */

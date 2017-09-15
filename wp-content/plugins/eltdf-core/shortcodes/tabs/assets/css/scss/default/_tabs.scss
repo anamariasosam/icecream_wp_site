@@ -1,0 +1,190 @@
+/* ==========================================================================
+   Tabs shortcode style - begin
+   ========================================================================== */
+
+.eltdf-tabs {
+	@include eltdfRelativeHolderLayout();
+	
+	.eltdf-tabs-nav {
+		@include eltdfRelativeHolderLayout();
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		
+		li {
+			float: left;
+			margin: 0;
+			padding: 0;
+			
+			a {
+				position: relative;
+				display: inline-block;
+				vertical-align: middle;
+				font-family: $default-heading-font-light;
+				font-size: 16px;
+				padding: 12px 26px;
+				line-height: 25px;
+				box-sizing: border-box;
+				@include eltdfTransition(color .2s ease-out, background-color .2s ease-out, border-color .2s ease-out);
+			}
+		}
+	}
+	
+	.eltdf-tab-container {
+		@include eltdfRelativeHolderLayout();
+		
+		p {
+			margin: 0;
+		}
+	}
+	
+	&.eltdf-tabs-standard {
+		
+		.eltdf-tabs-nav {
+			
+			li {
+
+				&:first-child {
+
+					a {
+						border-right: 0;
+					}
+				}
+
+				&:last-child {
+
+					a {
+						border-right: 2px solid rgba($first-main-color, 0.5);
+					}
+				}
+				
+				a {
+					letter-spacing: 1px;
+					color: $default-heading-color;
+					border: 2px solid rgba($first-main-color, 0.5);
+					border-right: 0;
+				}
+				
+				&.ui-state-active a,
+				&.ui-state-hover a {
+					color: #fff;
+					background-color: $first-main-color;
+				}
+			}
+		}
+		
+		.eltdf-tab-container {
+			margin: 25px 0 0;
+		}
+	}
+	
+	&.eltdf-tabs-boxed {
+		
+		.eltdf-tabs-nav {
+			
+			li {
+				margin: 0 12px 0 0;
+				
+				a {
+					letter-spacing: 1px;
+					color: #fff;
+					background-color: #030303;
+				}
+				
+				&.ui-state-active a,
+				&.ui-state-hover a {
+					color: #fff;
+					background-color: $first-main-color;
+				}
+				
+				&:last-child {
+					margin: 0;
+				}
+			}
+		}
+		
+		.eltdf-tab-container {
+			margin: 25px 0 0;
+		}
+	}
+	
+	&.eltdf-tabs-simple {
+		
+		.eltdf-tabs-nav {
+			border-bottom: 1px solid $default-border-color;
+			
+			li {
+				margin: 0 31px 0 0;
+				
+				a {
+					font-family: $default-heading-font;
+					font-size: 18px;
+					line-height: 26px;
+					color: $default-text-color;
+					padding: 13px 0;
+				}
+				
+				&.ui-state-active a,
+				&.ui-state-hover a {
+					color: $default-heading-color;
+				}
+				
+				&:last-child {
+					margin: 0;
+				}
+			}
+		}
+		
+		.eltdf-tab-container {
+			padding: 31px 0;
+			border-bottom: 1px solid $default-border-color;
+		}
+	}
+	
+	&.eltdf-tabs-vertical {
+		display: table;
+		
+		.eltdf-tabs-nav {
+			display: table-cell;
+			vertical-align: top;
+			width: 140px;
+			height: 100%;
+			border-right: 1px solid $default-border-color;
+			box-sizing: border-box;
+			
+			li {
+				display: block;
+				float: none;
+				margin: 0 0 24px;
+				
+				a {
+					font-family: $default-heading-font;
+					font-size: 18px;
+					line-height: 26px;
+					color: $default-text-color;
+				}
+				
+				&.ui-state-active a,
+				&.ui-state-hover a {
+					color: $default-heading-color;
+				}
+				
+				&:last-child {
+					margin: 0;
+				}
+			}
+		}
+		
+		.eltdf-tab-container {
+			display: table-cell;
+			vertical-align: top;
+			width: calc(100% - 140px);
+			height: 100%;
+			padding: 0 0 0 45px;
+			box-sizing: border-box;
+		}
+	}
+}
+/* ==========================================================================
+   Tabs shortcode style - end
+   ========================================================================== */

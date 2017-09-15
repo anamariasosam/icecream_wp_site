@@ -1,0 +1,39 @@
+/* ==========================================================================
+   Portfolio Single - Gallery layout style - begin
+   ========================================================================== */
+
+.eltdf-portfolio-single-holder {
+    
+    &.eltdf-ps-gallery-layout {
+        
+        .eltdf-ps-image-holder {
+	        width: 100%;
+            margin: 0 0 40px;
+	
+	        .eltdf-ps-image {
+		        float: left;
+		        
+		        a {
+			
+			        &:hover {
+				
+				        &:after {
+					        opacity: 1;
+				        }
+			        }
+			
+			        &:after {
+				        @include eltdfAbsoluteHolderLayout();
+				        content: '';
+				        background-color: rgba($default-heading-color, .4);
+				        opacity: 0;
+				        @include eltdfTransition(opacity .2s ease-in-out);
+			        }
+		        }
+	        }
+        }
+    }
+}
+/* ==========================================================================
+   Portfolio Single - Gallery layout style - end
+   ========================================================================== */

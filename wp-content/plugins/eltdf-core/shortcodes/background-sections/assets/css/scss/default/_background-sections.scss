@@ -1,0 +1,26 @@
+.eltdf-bs-holder {
+	@include eltdfRelativeHolderLayout();
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	z-index: 21;
+
+	.eltdf-bs-content-inner {
+		margin: 0 auto;
+	}
+
+	&.eltdf-bs-image-right {
+		background-position: center right;
+	}
+
+	&.eltdf-bs-image-left {
+		background-position: center left;
+	}
+
+	.eltdf-bs-content-image {
+
+		img {
+			display: none
+		}
+	}
+}

@@ -1,0 +1,124 @@
+.eltdf-pricing-list {
+
+	&.eltdf-pl-no-dots {
+
+		.eltdf-pricing-list-item {
+
+			.eltdf-pli-dots {
+				border: none
+			}
+		}
+	}
+
+	.eltdf-pricing-list-item {
+		@include eltdfRelativeHolderLayout();
+		margin: 0 0 23px;
+
+		&:last-child {
+			margin: 0;
+		}
+
+		&.eltdf-pli-no-image {
+
+			.eltdf-pli-content {
+
+				.eltdf-pli-content-holder {
+					position: relative;
+					top: 0;
+					@include eltdfTransform(none);
+				}
+
+				.eltdf-pli-bottom-content {
+					line-height: 1.2;
+				}
+			}
+		}
+
+		.eltdf-pli-image-holder {
+			float: left;
+			width: 125px;
+
+			img {
+				display: block;
+			}
+		}
+
+		.eltdf-pli-content {
+			@include eltdfRelativeHolderLayout();
+
+			.eltdf-pli-content-holder {
+				position: absolute;
+				width: 100%;
+				top: 50%;
+				padding: 0 0 0 146px;
+				box-sizing: border-box;
+				@include eltdfTransform(translateY(-60%));
+			}
+
+			.eltdf-pli-title-holder {
+				margin: 0 0 20px;
+
+				.eltdf-pli-title {
+					margin: 0 ;
+
+					.eltdf-pl-quotes {
+
+						&:before {
+							content: open-quote;
+						}
+
+						&:after {
+							content: close-quote;
+						}
+					}
+				}
+
+				.eltdf-pl-title-desc {
+					font-size: 16px;
+				}
+			}
+
+			.eltdf-pli-bottom-content {
+				line-height: 0.8;
+
+				.eltdf-pli-desc {
+					display: table-cell;
+					width: 1%;
+					white-space: nowrap;
+					padding: 0 11px 0 0;
+
+					p {
+						margin: 0;
+					}
+				}
+
+				.eltdf-pli-dots {
+					position: relative;
+					display: table-cell;
+					height: 3px;
+					width: 98%;
+					border-bottom: 1px dotted;
+					z-index: 1;
+				}
+
+				.eltdf-pli-price-holder {
+					display: table-cell;
+					width: 1%;
+					padding: 0 0 0 6px;
+					white-space: nowrap;
+
+					.eltdf-pli-price {
+						font-weight: normal;
+						line-height: 0.5;
+						margin:0;
+
+						span {
+							font-weight: 300;
+							letter-spacing: normal;
+						}
+					}
+				}
+			}
+		}
+	}
+}

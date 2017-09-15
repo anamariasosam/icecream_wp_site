@@ -1,0 +1,15 @@
+@include ipad-landscape {
+
+	.eltdf-bs-holder {
+		background-image: none !important; /* important to override inline style */
+		padding: 35px 15px !important; /* important to override inline style */
+		margin: 0 !important; /* important to override inline style */
+
+		.eltdf-bs-content-image {
+
+			img {
+				display: block;
+			}
+		}
+	}
+}

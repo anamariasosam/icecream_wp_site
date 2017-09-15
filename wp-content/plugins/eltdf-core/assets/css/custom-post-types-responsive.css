@@ -1,0 +1,342 @@
+/* ==========================================================================
+   Global partials
+   ========================================================================== */
+/* Button mixins - start */
+/* Button mixins - end */
+/* ==========================================================================
+   Custom Post Types responsive styles
+   ========================================================================== */
+/* ==========================================================================
+   Masonry Gallery shortcodes responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1024px) {
+  .eltdf-masonry-gallery-holder .eltdf-mg-grid-sizer,
+  .eltdf-masonry-gallery-holder .eltdf-mg-item {
+    width: 50%;
+  }
+  .eltdf-masonry-gallery-holder .eltdf-mg-item.eltdf-mg-square-big, .eltdf-masonry-gallery-holder .eltdf-mg-item.eltdf-mg-rectangle-landscape {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .eltdf-masonry-gallery-holder {
+    margin: 0 !important;
+    /* Important to override the space class which creates negative margin */
+  }
+  .eltdf-masonry-gallery-holder .eltdf-mg-grid-sizer,
+  .eltdf-masonry-gallery-holder .eltdf-mg-item {
+    width: 100%;
+  }
+}
+
+/* ==========================================================================
+   Masonry Gallery shortcodes responsive style - end
+   ========================================================================== */
+/* ==========================================================================
+   Portfolio shortcode responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1400px) {
+  .eltdf-portfolio-list-holder.eltdf-pl-masonry.eltdf-pl-five-columns article,
+  .eltdf-portfolio-list-holder.eltdf-pl-masonry.eltdf-pl-five-columns .eltdf-pl-grid-sizer {
+    width: 25%;
+  }
+  .eltdf-portfolio-list-holder.eltdf-pl-masonry.eltdf-pl-five-columns article.eltdf-pl-masonry-large-width, .eltdf-portfolio-list-holder.eltdf-pl-masonry.eltdf-pl-five-columns article.eltdf-pl-masonry-large-width-height {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .eltdf-portfolio-list-holder.eltdf-pl-gallery.eltdf-pl-four-columns article {
+    width: 33.33333%;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 1025px) {
+  .eltdf-portfolio-list-holder.eltdf-pl-gallery.eltdf-pl-four-columns article:nth-child(3n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .eltdf-portfolio-list-holder.eltdf-pl-gallery.eltdf-pl-five-columns article {
+    width: 33.33333%;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 1025px) {
+  .eltdf-portfolio-list-holder.eltdf-pl-gallery.eltdf-pl-five-columns article:nth-child(3n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .eltdf-portfolio-list-holder.eltdf-pl-masonry.eltdf-pl-four-columns article,
+  .eltdf-portfolio-list-holder.eltdf-pl-masonry.eltdf-pl-four-columns .eltdf-pl-grid-sizer {
+    width: 33.33333%;
+  }
+  .eltdf-portfolio-list-holder.eltdf-pl-masonry.eltdf-pl-four-columns article.eltdf-pl-masonry-large-width, .eltdf-portfolio-list-holder.eltdf-pl-masonry.eltdf-pl-four-columns article.eltdf-pl-masonry-large-width-height {
+    width: 66.66667%;
+  }
+  .eltdf-portfolio-list-holder.eltdf-pl-masonry.eltdf-pl-five-columns article,
+  .eltdf-portfolio-list-holder.eltdf-pl-masonry.eltdf-pl-five-columns .eltdf-pl-grid-sizer {
+    width: 33.33333%;
+  }
+  .eltdf-portfolio-list-holder.eltdf-pl-masonry.eltdf-pl-five-columns article.eltdf-pl-masonry-large-width, .eltdf-portfolio-list-holder.eltdf-pl-masonry.eltdf-pl-five-columns article.eltdf-pl-masonry-large-width-height {
+    width: 66.66667%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .eltdf-portfolio-list-holder.eltdf-pl-gallery.eltdf-pl-three-columns article {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 681px) {
+  .eltdf-portfolio-list-holder.eltdf-pl-gallery.eltdf-pl-three-columns article:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .eltdf-portfolio-list-holder.eltdf-pl-gallery.eltdf-pl-four-columns article {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 681px) {
+  .eltdf-portfolio-list-holder.eltdf-pl-gallery.eltdf-pl-four-columns article:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .eltdf-portfolio-list-holder.eltdf-pl-gallery.eltdf-pl-five-columns article {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 681px) {
+  .eltdf-portfolio-list-holder.eltdf-pl-gallery.eltdf-pl-five-columns article:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .eltdf-portfolio-list-holder.eltdf-pl-masonry.eltdf-pl-three-columns article,
+  .eltdf-portfolio-list-holder.eltdf-pl-masonry.eltdf-pl-three-columns .eltdf-pl-grid-sizer {
+    width: 50%;
+  }
+  .eltdf-portfolio-list-holder.eltdf-pl-masonry.eltdf-pl-three-columns article.eltdf-pl-masonry-large-width, .eltdf-portfolio-list-holder.eltdf-pl-masonry.eltdf-pl-three-columns article.eltdf-pl-masonry-large-width-height {
+    width: 100%;
+  }
+  .eltdf-portfolio-list-holder.eltdf-pl-masonry.eltdf-pl-four-columns article,
+  .eltdf-portfolio-list-holder.eltdf-pl-masonry.eltdf-pl-four-columns .eltdf-pl-grid-sizer {
+    width: 50%;
+  }
+  .eltdf-portfolio-list-holder.eltdf-pl-masonry.eltdf-pl-four-columns article.eltdf-pl-masonry-large-width, .eltdf-portfolio-list-holder.eltdf-pl-masonry.eltdf-pl-four-columns article.eltdf-pl-masonry-large-width-height {
+    width: 100%;
+  }
+  .eltdf-portfolio-list-holder.eltdf-pl-masonry.eltdf-pl-five-columns article,
+  .eltdf-portfolio-list-holder.eltdf-pl-masonry.eltdf-pl-five-columns .eltdf-pl-grid-sizer {
+    width: 50%;
+  }
+  .eltdf-portfolio-list-holder.eltdf-pl-masonry.eltdf-pl-five-columns article.eltdf-pl-masonry-large-width, .eltdf-portfolio-list-holder.eltdf-pl-masonry.eltdf-pl-five-columns article.eltdf-pl-masonry-large-width-height {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .eltdf-portfolio-list-holder.eltdf-pl-gallery article {
+    width: 100% !important;
+  }
+  .eltdf-portfolio-list-holder.eltdf-pl-masonry.eltdf-pl-two-columns article,
+  .eltdf-portfolio-list-holder.eltdf-pl-masonry.eltdf-pl-two-columns .eltdf-pl-grid-sizer {
+    width: 100%;
+  }
+  .eltdf-portfolio-list-holder.eltdf-pl-masonry.eltdf-pl-three-columns article,
+  .eltdf-portfolio-list-holder.eltdf-pl-masonry.eltdf-pl-three-columns .eltdf-pl-grid-sizer {
+    width: 100%;
+  }
+  .eltdf-portfolio-list-holder.eltdf-pl-masonry.eltdf-pl-four-columns article,
+  .eltdf-portfolio-list-holder.eltdf-pl-masonry.eltdf-pl-four-columns .eltdf-pl-grid-sizer {
+    width: 100%;
+  }
+  .eltdf-portfolio-list-holder.eltdf-pl-masonry.eltdf-pl-five-columns article,
+  .eltdf-portfolio-list-holder.eltdf-pl-masonry.eltdf-pl-five-columns .eltdf-pl-grid-sizer {
+    width: 100%;
+  }
+}
+
+/* ==========================================================================
+   Portfolio shortcode responsive style - end
+   ========================================================================== */
+/* ==========================================================================
+   Portfolio Single page responsive style - begin
+   ========================================================================== */
+.eltdf-portfolio-single-holder .eltdf-ps-image-holder.eltdf-ps-gallery-images {
+  /***** Columns Layout - begin *****/
+  /***** Columns Layout - end *****/
+}
+
+@media only screen and (max-width: 1200px) {
+  .eltdf-portfolio-single-holder .eltdf-ps-image-holder.eltdf-ps-gallery-images.eltdf-ps-four-columns .eltdf-ps-image {
+    width: 33.33333%;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 1025px) {
+  .eltdf-portfolio-single-holder .eltdf-ps-image-holder.eltdf-ps-gallery-images.eltdf-ps-four-columns .eltdf-ps-image:nth-child(3n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .eltdf-portfolio-single-holder .eltdf-ps-image-holder.eltdf-ps-gallery-images.eltdf-ps-three-columns .eltdf-ps-image {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 681px) {
+  .eltdf-portfolio-single-holder .eltdf-ps-image-holder.eltdf-ps-gallery-images.eltdf-ps-three-columns .eltdf-ps-image:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .eltdf-portfolio-single-holder .eltdf-ps-image-holder.eltdf-ps-gallery-images.eltdf-ps-four-columns .eltdf-ps-image {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 681px) {
+  .eltdf-portfolio-single-holder .eltdf-ps-image-holder.eltdf-ps-gallery-images.eltdf-ps-four-columns .eltdf-ps-image:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .eltdf-portfolio-single-holder .eltdf-ps-image-holder.eltdf-ps-gallery-images .eltdf-ps-image {
+    width: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .eltdf-portfolio-single-holder .eltdf-ps-image-holder.eltdf-ps-masonry-images.eltdf-ps-four-columns .eltdf-ps-image,
+  .eltdf-portfolio-single-holder .eltdf-ps-image-holder.eltdf-ps-masonry-images.eltdf-ps-four-columns .eltdf-ps-grid-sizer {
+    width: 33.33333%;
+  }
+  .eltdf-portfolio-single-holder .eltdf-ps-image-holder.eltdf-ps-masonry-images.eltdf-ps-four-columns .eltdf-ps-image.eltdf-ps-masonry-large-item {
+    width: 66.66667%;
+  }
+  .eltdf-portfolio-single-holder .eltdf-ps-image-holder.eltdf-ps-masonry-images.eltdf-ps-five-columns .eltdf-ps-image,
+  .eltdf-portfolio-single-holder .eltdf-ps-image-holder.eltdf-ps-masonry-images.eltdf-ps-five-columns .eltdf-ps-grid-sizer {
+    width: 33.33333%;
+  }
+  .eltdf-portfolio-single-holder .eltdf-ps-image-holder.eltdf-ps-masonry-images.eltdf-ps-five-columns .eltdf-ps-image.eltdf-ps-masonry-large-item {
+    width: 66.66667%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .eltdf-portfolio-single-holder .eltdf-ps-image-holder.eltdf-ps-masonry-images.eltdf-ps-three-columns .eltdf-ps-image,
+  .eltdf-portfolio-single-holder .eltdf-ps-image-holder.eltdf-ps-masonry-images.eltdf-ps-three-columns .eltdf-ps-grid-sizer {
+    width: 50%;
+  }
+  .eltdf-portfolio-single-holder .eltdf-ps-image-holder.eltdf-ps-masonry-images.eltdf-ps-three-columns .eltdf-ps-image.eltdf-ps-masonry-large-item {
+    width: 100%;
+  }
+  .eltdf-portfolio-single-holder .eltdf-ps-image-holder.eltdf-ps-masonry-images.eltdf-ps-four-columns .eltdf-ps-image,
+  .eltdf-portfolio-single-holder .eltdf-ps-image-holder.eltdf-ps-masonry-images.eltdf-ps-four-columns .eltdf-ps-grid-sizer {
+    width: 50%;
+  }
+  .eltdf-portfolio-single-holder .eltdf-ps-image-holder.eltdf-ps-masonry-images.eltdf-ps-four-columns .eltdf-ps-image.eltdf-ps-masonry-large-item {
+    width: 100%;
+  }
+  .eltdf-portfolio-single-holder .eltdf-ps-image-holder.eltdf-ps-masonry-images.eltdf-ps-five-columns .eltdf-ps-image,
+  .eltdf-portfolio-single-holder .eltdf-ps-image-holder.eltdf-ps-masonry-images.eltdf-ps-five-columns .eltdf-ps-grid-sizer {
+    width: 50%;
+  }
+  .eltdf-portfolio-single-holder .eltdf-ps-image-holder.eltdf-ps-masonry-images.eltdf-ps-five-columns .eltdf-ps-image.eltdf-ps-masonry-large-item {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .eltdf-portfolio-single-holder .eltdf-ps-image-holder.eltdf-ps-masonry-images.eltdf-ps-two-columns .eltdf-ps-image,
+  .eltdf-portfolio-single-holder .eltdf-ps-image-holder.eltdf-ps-masonry-images.eltdf-ps-two-columns .eltdf-ps-grid-sizer {
+    width: 100%;
+  }
+  .eltdf-portfolio-single-holder .eltdf-ps-image-holder.eltdf-ps-masonry-images.eltdf-ps-three-columns .eltdf-ps-image,
+  .eltdf-portfolio-single-holder .eltdf-ps-image-holder.eltdf-ps-masonry-images.eltdf-ps-three-columns .eltdf-ps-grid-sizer {
+    width: 100%;
+  }
+  .eltdf-portfolio-single-holder .eltdf-ps-image-holder.eltdf-ps-masonry-images.eltdf-ps-four-columns .eltdf-ps-image,
+  .eltdf-portfolio-single-holder .eltdf-ps-image-holder.eltdf-ps-masonry-images.eltdf-ps-four-columns .eltdf-ps-grid-sizer {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .eltdf-portfolio-single-holder .eltdf-ps-info-holder {
+    margin: 30px 0 0 !important;
+  }
+}
+
+/* ==========================================================================
+   Portfolio Single page responsive style - end
+   ========================================================================== */
+/* ==========================================================================
+   Testimonials shortcode responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1280px) {
+  .eltdf-testimonials-holder.eltdf-testimonials-boxed .eltdf-testimonial-content .eltdf-testimonial-image,
+  .eltdf-testimonials-holder.eltdf-testimonials-boxed .eltdf-testimonial-content .eltdf-testimonials-author-holder {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .eltdf-testimonials-holder.eltdf-testimonials-boxed .eltdf-testimonial-content .eltdf-testimonial-image,
+  .eltdf-testimonials-holder.eltdf-testimonials-boxed .eltdf-testimonial-content .eltdf-testimonials-author-holder {
+    width: 100%;
+  }
+  .eltdf-testimonials-holder.eltdf-testimonials-boxed .eltdf-testimonial-content .eltdf-testimonial-content-inner {
+    padding: 10px 5px;
+  }
+  .eltdf-testimonials-holder.eltdf-testimonials-boxed .eltdf-testimonial-bottom .eltdf-testimonial-image {
+    float: none;
+  }
+  .eltdf-testimonials-holder.eltdf-testimonials-boxed .eltdf-testimonials-author-holder {
+    position: relative;
+    margin: 10px 0 0;
+  }
+  .eltdf-testimonials-holder.eltdf-testimonials-boxed .eltdf-testimonials-author-holder .eltdf-testimonial-author-inner {
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+    -webkit-transform: none;
+    -moz-transform: none;
+    transform: none;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .eltdf-testimonials-holder.eltdf-testimonials-boxed .eltdf-testimonial-content .eltdf-testimonial-content-inner {
+    text-align: center;
+  }
+  .eltdf-testimonials-holder .eltdf-testimonials {
+    padding: 0;
+  }
+}
+
+/* ==========================================================================
+   Testimonials shortcode responsive style - end
+   ========================================================================== */
+
+/*# sourceMappingURL=../../../../plugins/eltdf-core/assets/css/custom-post-types-responsive.css.map */

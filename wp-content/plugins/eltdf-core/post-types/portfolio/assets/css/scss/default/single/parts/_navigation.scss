@@ -1,0 +1,141 @@
+/* ==========================================================================
+   Portfolio Single navigation style - begin
+   ========================================================================== */
+
+.eltdf-ps-navigation {
+	position: relative;
+	display: table;
+	vertical-align: middle;
+	width: 100%;
+	padding: 0;
+	margin: 125px 0 25px;
+	clear: both;
+    box-sizing: border-box;
+
+	&:after {
+		content: " ";
+		position: absolute;
+		display: block;
+		top: -30px;
+		width: 9999px;
+		left: -1000px;
+		border-top: 1px solid rgba($first-main-color, 0.2);
+	}
+
+    .eltdf-ps-full-width-custom-layout & {
+        padding: 0 40px;
+    }
+	
+	.eltdf-ps-back-btn {
+		position: absolute;
+		display: inline-block;
+		vertical-align: middle;
+		top: 50%;
+		left: 50%;
+		@include eltdfTransform(translateX(-50%) translateY(-50%));
+		
+		a {
+			position: relative;
+			display: inline-block;
+			margin: 0;
+			padding: 0;
+			vertical-align: middle;
+			cursor: pointer;
+			font-family: $default-heading-font;
+			color: $default-text-color;
+			font-size: 16px;
+			font-weight: 700;
+			line-height: 1;
+
+			&:hover {
+				color: $first-main-color;
+			}
+			
+			span {
+				display: block;
+				line-height: inherit;
+				
+				&:before,
+				&:after {
+					display: block;
+					line-height: 14px;
+				}
+				
+				&:after {
+					content: "\e0a6";
+				}
+			}
+		}
+	}
+	
+	.eltdf-ps-prev,
+	.eltdf-ps-next {
+		position: relative;
+		width: 49%;
+		padding: 0;
+		box-sizing: border-box;
+		
+		a {
+			position: relative;
+			display: inline-block;
+			vertical-align: middle;
+			width: 100%;
+			max-width: 224px;
+		}
+
+		img {
+			float: left;
+			width: 60px;
+			height: 60px;
+			margin: 0 11px 0 0;
+		}
+		
+		.eltdf-ps-nav-title {
+			display: block;
+		}
+
+		.eltdf-ps-nav-title {
+			font-family: $default-heading-font;
+			font-size: 16px;
+			line-height: 1;
+		}
+	}
+	
+	.eltdf-ps-prev {
+		float: left;
+
+		a {
+			
+			.eltdf-ps-nav-mark {
+				left: 0;
+			}
+		}
+	}
+	
+	.eltdf-ps-next {
+		float: right;
+		text-align: right;
+
+		img {
+			float: right;
+			margin: 0 0 0 11px;
+		}
+	}
+}
+
+@include phone-landscape {
+
+	.eltdf-ps-navigation {
+
+		.eltdf-ps-prev,
+		.eltdf-ps-next {
+
+			.eltdf-ps-nav-title {
+				display: none;
+			}
+		}
+	}
+}
+/* ==========================================================================
+   Portfolio Single navigation style - end
+   ========================================================================== */

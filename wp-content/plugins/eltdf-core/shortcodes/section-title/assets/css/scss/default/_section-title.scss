@@ -1,0 +1,87 @@
+/* ==========================================================================
+   Section Title shortcode styles - begin
+   ========================================================================== */
+
+.eltdf-section-title-holder {
+    @include eltdfRelativeHolderLayout();
+	box-sizing: border-box;
+	
+	@include phone-landscape {
+		padding: 0 !important; // it can be set inline in shortcode options
+	}
+
+	&.eltdf-separator-disabled {
+
+		.eltdf-st-title  {
+			margin: 20px 0;
+			padding: 0;
+
+			&:before {
+				display: none;
+			}
+		}
+	}
+
+	&.eltdf-separator-inherit-color {
+
+		.eltdf-st-title  {
+
+			&:before {
+				border-color: currentColor;
+			}
+		}
+	}
+	
+    .eltdf-st-title {
+		position: relative;
+	    display: block;
+		padding: 0 0 24px;
+		margin: 0 0 17px;
+
+		&.eltdf-title-center {
+
+			&:before {
+				left: 50%;
+				@include eltdfTransform(translateX(-50%));
+			}
+		}
+
+		&.eltdf-title-right {
+
+			&:before {
+				right: 0;
+				@include eltdfTransform(none);
+			}
+		}
+
+		&:before {
+			content: " ";
+			position: absolute;
+			display: block;
+			width: 75px;
+			left: 0;
+			bottom: 0;
+			opacity:1;
+			border-top: 1px solid $first-main-color;
+			@include eltdfTransition(all 0.3s ease-in-out 0.3s);
+			@include eltdfTransform(none);
+		}
+    }
+    
+    .eltdf-st-text {
+	    display: block;
+        margin: 14px 0 0;
+    }
+
+    &.eltdf-appeared {
+    	.eltdf-st-title:before {
+    		opacity:1;
+    		width:95px;
+    	}
+    }
+}
+/* ==========================================================================
+   Section Title shortcode styles - end
+   ========================================================================== */
+
+

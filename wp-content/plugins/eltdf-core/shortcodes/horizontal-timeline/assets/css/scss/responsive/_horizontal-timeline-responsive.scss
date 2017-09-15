@@ -1,0 +1,27 @@
+@include ipad-landscape {
+
+    .eltdf-horizontal-timeline {
+
+        .eltdf-events-content {
+
+            .eltdf-hti-content-image {
+                width: 100%;
+                display: block;
+                height: auto;
+            }
+
+            .eltdf-hti-content-value {
+                width: 100%;
+            }
+
+            > ol > li {
+                &:nth-child(2n+2) {
+                    .eltdf-event-text {
+                        position: relative;
+                        top: 60px;
+                    }
+                }
+            }
+        }
+    }
+}

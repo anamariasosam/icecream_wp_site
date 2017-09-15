@@ -1,0 +1,290 @@
+/* ==========================================================================
+   Portfolio Single page style - begin
+   ========================================================================== */
+
+.eltdf-portfolio-single-holder {
+	@include eltdfRelativeHolderLayout();
+
+	.eltdf-ps-image-holder {
+		@include eltdfRelativeHolderLayout();
+
+		.eltdf-ps-image {
+			@include eltdfRelativeHolderLayout();
+			box-sizing: border-box;
+
+			a, img {
+				position: relative;
+				display: block;
+			}
+		}
+	}
+
+	.eltdf-ps-info-item {
+
+		p {
+			margin: 0;
+		}
+	}
+
+	.eltdf-portfolio-author-holder {
+		@include eltdfRelativeHolderLayout();
+
+		.eltdf-portfolio-author-image,
+		.eltdf-portfolio-author-name	{
+			display: inline-block;
+			vertical-align: middle;
+		}
+
+		.eltdf-portfolio-author-image {
+			margin: 0 10px 0 0;
+			border-radius: 50%;
+			overflow: hidden;
+
+			img {
+				display: block;
+			}
+		}
+	}
+
+	.eltdf-ps-info-holder {
+		@include eltdfRelativeHolderLayout();
+
+		.eltdf-ps-info-item {
+			@include eltdfTableLayout();
+			margin: 0 0 9px;
+
+			&.eltdf-ps-social-share {
+				border-top: 1px solid $first-main-color;
+				padding: 21px 0 0;
+				margin: 37px 0 0;
+
+				.eltdf-social-label {
+					color: $default-heading-color;
+					margin: 0 30px 0 0;
+					
+					@include laptop-landscape-large {
+						margin: 0 20px 0 0;
+					}
+				}
+
+				ul {
+
+					li {
+						margin: 0 45px 0 0;
+						
+						@include laptop-landscape-large {
+							margin: 0 30px 0 0;
+						}
+
+						&:last-child {
+							margin: 0;
+						}
+					}
+				}
+			}
+
+			&.eltdf-ps-categories,
+			&.eltdf-ps-tags {
+
+				p {
+
+					a {
+
+						&:before {
+							content: ",";
+							margin: 0 3px 0 -2px;
+						}
+
+						&:first-child:before {
+							display: none;
+						}
+					}
+				}
+			}
+
+			&.eltdf-ps-social-share {
+				margin: 37px 0 0;
+			}
+
+			.eltdf-ps-info-title {
+				width: 96px;
+				color: $default-heading-color;
+				margin: 0 0 5px;
+			}
+
+			p, a {
+				margin: 0;
+			}
+
+			a {
+				color: #9b9b9b;
+
+				&:hover {
+					color: $first-main-color;
+				}
+			}
+
+			p {
+				@include eltdfTableCellLayout();
+			}
+		}
+
+		.eltdf-ps-info-title {
+			margin: 0;
+		}
+	}
+}
+
+/* ==========================================================================
+   Portfolio Single page style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Portfolio Single page specific style for types - begin
+   ========================================================================== */
+
+.eltdf-portfolio-single-holder {
+
+	.eltdf-ps-image-holder {
+
+		&.eltdf-ps-gallery-images {
+
+			/***** Columns Layout - begin *****/
+
+			$columns_number: ('two', 'three', 'four');
+
+			@for $i from 0 to length($columns_number) {
+				&.eltdf-ps-#{nth($columns_number,$i+1)}-columns {
+
+					.eltdf-ps-image {
+						width: 100% / ($i+2);
+					}
+
+					@if ($i > 1) { // set different break point for four columns
+						@media only screen and (min-width: $laptop-landscape-plus-pixel) {
+
+							.eltdf-ps-image {
+
+								&:nth-child(#{$i+2}n+1) {
+									clear: both;
+								}
+							}
+						}
+					} @else {
+						@media only screen and (min-width: $ipad-landscape-plus-pixel) {
+
+							.eltdf-ps-image {
+
+								&:nth-child(#{$i+2}n+1) {
+									clear: both;
+								}
+							}
+						}
+					}
+				}
+			}
+
+			/***** Columns Layout - end *****/
+
+			/***** Space Between Columns Space - begin *****/
+
+			$columns_space_label: ('no', 'tiny', 'small', 'normal');
+			$columns_space: (0, 5, 10, 15);
+
+			@for $i from 0 to length($columns_space_label) {
+				&.eltdf-ps-#{nth($columns_space_label,$i+1)}-space {
+					$item_space: nth($columns_space, $i+1);
+					$item_bottom_margin: $item_space * 2;
+
+					@if($item_space == 0) {
+						.eltdf-ps-image-inner {
+							margin: 0;
+						}
+					} @else {
+						$reduced_margin: 40 - $item_bottom_margin; // 40 is bottom margin of image holder
+						margin: 0 0 #{$reduced_margin}px;
+
+						.eltdf-ps-image-inner {
+							margin: 0 -#{$item_space}px;
+						}
+					}
+
+					.eltdf-ps-image {
+						padding: 0 #{$item_space}px;
+						margin: 0 0 #{$item_bottom_margin}px;
+					}
+				}
+			}
+
+			/***** Space Between Columns Space - end *****/
+		}
+
+		&.eltdf-ps-masonry-images {
+
+			.eltdf-ps-image,
+			.eltdf-ps-grid-sizer {
+				width: 25%;
+			}
+
+			.eltdf-ps-grid-gutter {
+				width: 0;
+			}
+
+			/***** Columns Layout - begin *****/
+
+			$columns_number: ('two', 'three', 'four');
+
+			@for $i from 0 to length($columns_number) {
+				&.eltdf-ps-#{nth($columns_number,$i+1)}-columns {
+					$column_width: 100%/($i+2);
+
+					.eltdf-ps-image,
+					.eltdf-ps-grid-sizer {
+						width: $column_width;
+					}
+
+					.eltdf-ps-image.eltdf-ps-masonry-large-item {
+						width: $column_width * 2;
+					}
+				}
+			}
+
+			/***** Columns Layout - end *****/
+
+			/***** Space Between Columns Space - begin *****/
+
+			$columns_space_label: ('no', 'tiny', 'small', 'normal');
+			$columns_space: (0, 5, 10, 15);
+
+			@for $i from 0 to length($columns_space_label) {
+				&.eltdf-ps-#{nth($columns_space_label,$i+1)}-space {
+					$item_space: nth($columns_space, $i+1);
+					$item_bottom_margin: $item_space * 2;
+
+					@if($item_space == 0) {
+						.eltdf-ps-image-inner {
+							margin: 0;
+						}
+					} @else {
+						$reduced_margin: 40 - $item_bottom_margin; // 40 is bottom margin of image holder
+						margin: 0 0 #{$reduced_margin}px;
+
+						.eltdf-ps-image-inner {
+							margin: 0 -#{$item_space}px;
+						}
+					}
+
+					.eltdf-ps-image {
+						padding: 0 #{$item_space}px;
+						margin: 0 0 #{$item_bottom_margin}px;
+					}
+				}
+			}
+
+			/***** Space Between Columns Space - end *****/
+		}
+	}
+}
+/* ==========================================================================
+   Portfolio Single page specific style for types - end
+   ========================================================================== */

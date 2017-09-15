@@ -1,0 +1,95 @@
+@include ipad-landscape {
+
+	.eltdf-pricing-list {
+
+		.eltdf-pricing-list-item {
+			margin: 0 0 65px;
+
+			&:last-child {
+				margin: 0;
+			}
+
+			&:last-child {
+				margin: 0;
+			}
+
+			.eltdf-pli-image-holder {
+				float: none;
+				width: 125px;
+				margin: 0 auto;
+			}
+
+			.eltdf-pli-content {
+				text-align: center;
+
+				.eltdf-pli-content-holder {
+					position: relative;
+					padding: 0;
+					top: 0;
+					margin: 15px 0 0;
+					@include eltdfTransform(none);
+
+					.eltdf-pli-title-holder {
+						white-space: normal;
+						width: 100%;
+						text-align: center;
+					}
+
+					.eltdf-pli-bottom-content {
+
+						.eltdf-pli-desc {
+							display: block;
+							width: 100%;
+							white-space: normal;
+							line-height: 1.2;
+						}
+
+						.eltdf-pli-dots {
+							display: none;
+						}
+
+						.eltdf-pli-price-holder {
+							display: block;
+							width: 100%;
+							text-align: center;
+
+							.eltdf-pli-price {
+								font-size: 1.1em;
+								line-height: 1.2;
+								margin: 10px 0 0;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@include ipad-portrait {
+
+	.eltdf-pricing-list {
+
+		.eltdf-pricing-list-item {
+
+			.eltdf-pli-content {
+
+				.eltdf-pli-content-holder {
+
+					.eltdf-pli-dots {
+						display: none;
+					}
+				}
+
+				.eltdf-pli-bottom-content {
+
+					.eltdf-pli-price-holder {
+
+						.eltdf-pli-price {
+						}
+					}
+				}
+			}
+		}
+	}
+}
