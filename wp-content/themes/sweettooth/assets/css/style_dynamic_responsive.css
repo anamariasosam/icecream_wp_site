@@ -24,3 +24,9 @@ h1 { font-size: 40px;}
 h1 { font-size: 30px;}
 
 }
+
+@media only screen and (min-width: 601px) and (max-width: 679px) {
+  .eltdf-image-carousel.eltdf-image-carousel-custom-649495 .eltdf-ic-image {
+      height: 385px !important;
+  }
+}

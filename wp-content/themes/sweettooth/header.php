@@ -25,7 +25,7 @@
     <div class="eltdf-wrapper">
         <div class="eltdf-wrapper-inner">
             <?php sweettooth_elated_get_header(); ?>
-	
+
 	        <?php
 	        /**
 	         * sweettooth_elated_action_after_header_area hook
@@ -34,6 +34,7 @@
 	         * @see sweettooth_elated_get_full_screen_menu() - hooked with 10
 	         */
 	        do_action('sweettooth_elated_action_after_header_area'); ?>
-	        
+
             <div class="eltdf-content" <?php sweettooth_elated_content_elem_style_attr(); ?>>
                 <div class="eltdf-content-inner">
+                  
